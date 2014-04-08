@@ -16,3 +16,8 @@ test('it should initialize', function() {
     ok($(App.rootElement).hasClass('ember-application'), 'The application was not initialized');
   });
 });
+
+test('it should do something else', function() {
+  expect(1);
+  ok(true);
+});

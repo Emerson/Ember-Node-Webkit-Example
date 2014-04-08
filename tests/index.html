@@ -8,15 +8,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <script>
-      ENV = {{ENV}};
-      document.write('<base href="' + document.location.origin + ENV.rootURL + '" />');
+      if (window.nwDispatcher) {
+        window.node_require = window.require;
+        window.require = undefined;
+        // Live reload equivlent
+        var fs = node_require('fs');
+        console.log('now watching tmp/restart.txt');
+        fs.watchFile('./tmp/restart.txt', [], function() {
+          if (location) {
+            location.reload(false);
+          }
+        });
+      }
     </script>
 
-    <link rel="stylesheet" href="/assets/app.css">
-    <link rel="stylesheet" href="/assets/qunit.css">
+    <script>
+      ENV = {{ENV}};
+      // document.write('<base href="' + document.location.origin + ENV.rootURL + '" />');
+    </script>
 
-    <script src="/assets/app.js"></script>
-    <script src="/assets/tests.js"></script>
+    <link rel="stylesheet" href="../assets/app.css">
+    <link rel="stylesheet" href="../assets/qunit.css">
+
+    <script src="../assets/app.js"></script>
+    <script src="../assets/tests.js"></script>
 
     <style>
       #ember-testing-container {
