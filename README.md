@@ -12,7 +12,7 @@
 
 ### Setup
 
-* Requirements: [Ember-CLI](https://github.com/stefanpenner/ember-cli) & Node
+* Requirements: [Node](http://nodejs.org/), [Ember-CLI](https://github.com/stefanpenner/ember-cli) & [Gulp.js](http://gulpjs.com/)
 * `git clone git@github.com:Emerson/Ember-Node-Webkit-Example.git`
 * `cd Ember-Node-Webkit-Example && npm install`
 * **Tab 1** - `gulp` - watches and triggers `ember build`
