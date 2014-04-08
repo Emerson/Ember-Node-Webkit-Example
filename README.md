@@ -17,3 +17,5 @@
 * `cd Ember-Node-Webkit-Example && npm install`
 * **Tab 1** - `gulp` - watches and triggers `ember build`
 * **Tab 2** - `npm start` - starts the node-webkit app
+
+![Up and Running](https://dl.dropboxusercontent.com/u/4502950/Github/updated-screenie.png)
