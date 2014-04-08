@@ -1,5 +1,6 @@
 {
   "name": "node-webkit",
+  "main": "./public/index.html",
   "APIMethod": "stub",
   "version": "0.0.0",
   "private": true,
@@ -8,13 +9,27 @@
     "test": "test"
   },
   "scripts": {
-    "start": "ember server",
+    "start": "./node-webkit.app/Contents/MacOS/node-webkit node-webkit.nw",
     "build": "ember build",
     "test": "ember test"
   },
+  "window": {
+    "title": "Super Test",
+    "toolbar": true,
+    "frame": true,
+    "width": 400,
+    "height": 400,
+    "position": "center",
+    "min_width": 400,
+    "min_height": 400
+  },
+  "webkit": {
+    "plugin": true
+  },
   "repository": {
     "type": "git",
-    "url": "git://github.com/stefanpenner/ember-cli.git"
+    "url": "git://github.com/Emerson/Ember-Node-Webkit-Example.git"
+    
   },
   "engines": {
     "node": ">= 0.10.0"
