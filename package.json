@@ -1,6 +1,6 @@
 {
   "name": "node-webkit",
-  "main": "./public/index.html",
+  "main": "./dist/index.html",
   "APIMethod": "stub",
   "version": "0.0.0",
   "private": true,
@@ -29,7 +29,7 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/Emerson/Ember-Node-Webkit-Example.git"
-    
+
   },
   "engines": {
     "node": ">= 0.10.0"

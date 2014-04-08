@@ -6,14 +6,14 @@
     <title>NodeWebkit</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="../utils/node-webkit-shim.js"></script>
 
     <script>
       window.ENV = {{ENV}};
-      document.write('<base href="' + document.location.origin + ENV.rootURL + '" />');
     </script>
 
-    <link rel="stylesheet" href="assets/app.css">
-    <script src="assets/app.js"></script>
+    <link rel="stylesheet" href="./assets/app.css">
+    <script src="./assets/app.js"></script>
   </head>
   <body>
     <script>
