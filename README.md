@@ -18,4 +18,9 @@
 * **Tab 1** - `gulp` - watches and triggers `ember build`
 * **Tab 2** - `npm start` - starts the node-webkit app
 
+### Tests
+
+* You should be able to run your tests from within Node-Webkit by manually visiting `dist/tests/index.html`. Make sure the application viewport is large enough to actually see your tests _(the preview will hide them)_.
+* It is also fully possible to run the tests outside of Node-Webkit by using the standard `ember server` and visiting `http://0.0.0.0:4200/tests`
+
 ![Up and Running](https://dl.dropboxusercontent.com/u/4502950/Github/updated-screenie.png)
